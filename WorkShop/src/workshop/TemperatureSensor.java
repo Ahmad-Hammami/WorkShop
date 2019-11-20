@@ -7,7 +7,7 @@ public class TemperatureSensor extends Sensor {
     private double value;
 
     public TemperatureSensor() {
-        this.value = Math.random() * 25 + 12 ;
+        this.value = Math.random()*((30-17)-1)+17;
     }
 
    
@@ -16,6 +16,5 @@ public class TemperatureSensor extends Sensor {
     public String toString() {
         return "TemperatureSensor er : " + value + "C";
     }
-
 
 }
