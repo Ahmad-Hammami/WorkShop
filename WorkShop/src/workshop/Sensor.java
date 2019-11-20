@@ -1,7 +1,7 @@
 package workshop;
 
 public abstract class Sensor extends Unit {
-    private double value;
+    double value;
 
     public double getValue() {
         return value;
