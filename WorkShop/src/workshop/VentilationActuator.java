@@ -1,5 +1,7 @@
 package workshop;
 
+import java.util.UUID;
+
 public class VentilationActuator extends Actuator {
      private double value;
 
@@ -11,5 +13,10 @@ public class VentilationActuator extends Actuator {
     public String toString() {
         return "VentilationActuator er ;" + value ;
     }
+
+    public VentilationActuator(double value, String name, UUID id) {
+        super(value, name, id);
+    }
+    
     
 }

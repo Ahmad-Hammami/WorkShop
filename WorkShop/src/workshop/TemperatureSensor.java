@@ -1,9 +1,11 @@
 package workshop;
 
 import java.util.Random;
+import java.util.UUID;
 
 public class TemperatureSensor extends Sensor {
 
+<<<<<<< HEAD
     private double value;
 
     public TemperatureSensor() {
@@ -11,10 +13,21 @@ public class TemperatureSensor extends Sensor {
     }
 
    
+=======
+    private double temp;
+>>>>>>> master
 
     @Override
     public String toString() {
-        return "TemperatureSensor er : " + value + "C";
+        return "TemperatureSensor er : " + temp +  "graders celsius";
     }
 
+<<<<<<< HEAD
+=======
+    public TemperatureSensor(double value, double temp, String name, UUID id) {
+        super(value, name, id);
+        temp = Math.random() * 25 + 12;
+        this.temp = temp;
+    }
+>>>>>>> master
 }
