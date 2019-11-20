@@ -6,6 +6,12 @@ public abstract class Unit {
     private String name;
     private UUID id;
 
+    public Unit(String name, UUID id) {
+        this.name = name;
+        id = UUID.randomUUID();
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }
@@ -16,7 +22,7 @@ public abstract class Unit {
 
     @Override
     public String toString() {
-        return "Unit{" + "name=" + name + ", id=" + id + '}';
+        return "Unit: " + "name = " + name + ", id = " + id;
     }
     
 }

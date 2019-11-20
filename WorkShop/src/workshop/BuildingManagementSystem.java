@@ -10,12 +10,11 @@ public class BuildingManagementSystem {
         return buildingList;
     }
     
-    public UUID addBuilding(String name) {
-        
+    public UUID addBuilding(UUID id) {
+        return id;
     }
     
     public void removeBuilding(UUID id){
         
     }
-    
 }

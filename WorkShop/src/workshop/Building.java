@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Building extends Unit {
-    ArrayList<Sensor> sensorList = new ArrayList<>();
-    ArrayList<Actuator> actuatorList = new ArrayList<>();
+    private ArrayList<Sensor> sensorList = new ArrayList<>();
+    private ArrayList<Actuator> actuatorList = new ArrayList<>();
+
+    public Building(String name, UUID id) {
+        super(name, id);
+    }
 
     public ArrayList<Sensor> getSensorList() {
         return sensorList;
@@ -15,23 +19,23 @@ public class Building extends Unit {
         return actuatorList;
     }
 
-    public UUID addTemperatureSensor(String name) {
-         
+    public UUID addTemperatureSensor(UUID id) {
+         return id;
     }
     
-    public UUID addCo2Sensor(String name) {
+    public UUID addCo2Sensor(UUID id) {
+        return id;
+    }
+    
+    public UUID addVentilationActuator(UUID id){
+        return id;
+    }
+    
+    public void removeTemperatureSensor(UUID id){
         
     }
     
-    public UUID addVentilationActuator(String name){
-        
-    }
-    
-    public void removeTemperatureSensor(){
-        
-    }
-    
-    public void removeActuatorSensor(){
+    public void removeActuatorSensor(UUID id){
         
     }
     
